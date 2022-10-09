@@ -17,14 +17,70 @@
 - [g] массив, состоящий из всех элементов a на четных позициях
     > подсказка: используйте срез
 """
+import copy
+
+
+# def Deepcopy(L):
+#     Len = len(L)
+#     i = 0
+#     kesh
+#     out = list()
+#     while i < Len:
+#         kesh = L[i]
+#         out.append(kesh)
+#         i += 1
+#     return out
+def Sum_list(s):
+    out = 0
+    i = 0
+    Len = len(s)
+    while i < Len:
+        out += s[i]
+        i += 1
+    return out
+
+def square(s):
+    out = list()
+    i = 0
+    Len = len(s)
+    while i <Len:
+        out.append(s[i] * s[i])
+        i += 2
+    return out
+def mirror_list(s):
+    out = list()
+    Len = len(s)
+    for i in range(1, Len):
+        out.append(s[Len - i])
+    return out
+def even_elements(s):
+    Len = len(s)
+    out = list()
+    i = 0
+    while i < Len:
+        out.append(s[i])
+        i += 2
+    return out
 
 from test.common.context import get_integer
 
 n = get_integer()
-a = ...
-
-# Место для вашего кода (заполнение массива)
+n = 5
+a = list()
+i = 0
+while i < n:
+    a.append(get_integer())
+    i += 1
 
 print(a)
-
-# Место для вашего кода
+# b = a.sort()
+# print(b)
+print(str(a[0]) + " " + str(a[int(n / 2)]) + " " + str(a[n - 1]))
+b = copy.deepcopy(a)
+b.sort()
+print(str(b[0]) + " " + str(b[n - 1]))
+print(Sum_list(a))
+print(square(a))# тут проблема
+print()
+print(even_elements(a))
+print(mirror_list(a))

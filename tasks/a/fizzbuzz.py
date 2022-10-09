@@ -18,4 +18,21 @@ fizzbuzz
 
 
 def fizzbuzz(a: int, b: int):
-    pass
+    if b < a:
+        c = a
+        a = b
+        b = c
+    i = a
+    b += 1
+    while i < b:
+        if i % 15
+            print("fizzbuzz")
+        elif i % 5
+            print("buzz")
+        elif i % 3
+            print("fizz")
+        else
+            print(i)
+        i += 1
+
+
