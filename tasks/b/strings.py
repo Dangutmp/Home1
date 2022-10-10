@@ -12,8 +12,30 @@
 - [f] количество "слов" в первой строке
 - [g] первую позицию вхождения первой строки во вторую (или -1, если их нет)
 """
+def First_word(s):
+    Len = len(s)
+    i = 0
+    out = ""
+    while s[i] != " ":
+        out += s[i]
+    return out
 
-s1 = ...
-s2 = ...
+def Word_count(s):
+    Len = len(s)
+    if Len == 1 and s[0] == " "
+        return 0
+    elif:
+        while i < Len:
+
+
+s1 = input()
+s2 = input()
+
+print(len(s1) * len(s2))
+print(s1, s2)
+print(s1 + "," + "" + s2)
+print("Hello, " + s1 + "! Just wanted to say:" + s2)
+print(First_word(s1), First_word(s2))
+
 
 # Место для вашего кода

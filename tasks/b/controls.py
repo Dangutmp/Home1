@@ -18,6 +18,7 @@ def Collarts(x):
             x /= 2
         else:
             x = 3 * x + 1
+        #print(x)
         n += 1
     return n
 def even_2(s):
@@ -27,6 +28,7 @@ def even_2(s):
     while i < Len:
         if i % 2 == 0:
             out += s[i]
+            i += 2
     return out
 def even_1(s):
     i = 0

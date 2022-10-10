@@ -62,6 +62,21 @@ def even_elements(s):
         i += 2
     return out
 
+def Max_element(s):
+    Len = len(s)
+    out = s[0]
+    for i in range(1, Len):
+        if out > s[i]:
+            out = s[i]
+    return out
+def Min_element(s):
+    Len = len(s)
+    out = s[0]
+    for i in range(1, Len):
+        if out < s[i]:
+            out = s[i]
+    return out
+
 from test.common.context import get_integer
 
 n = get_integer()
@@ -76,11 +91,9 @@ print(a)
 # b = a.sort()
 # print(b)
 print(str(a[0]) + " " + str(a[int(n / 2)]) + " " + str(a[n - 1]))
-b = copy.deepcopy(a)
-b.sort()
-print(str(b[0]) + " " + str(b[n - 1]))
+print(str(Min_element(a)) + " " + str(Max_element(s)))
 print(Sum_list(a))
 print(square(a))# тут проблема
 print()
-print(even_elements(a))
 print(mirror_list(a))
+print(even_elements(a))
