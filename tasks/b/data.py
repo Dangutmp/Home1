@@ -91,7 +91,7 @@ print(a)
 # b = a.sort()
 # print(b)
 print(str(a[0]) + " " + str(a[int(n / 2)]) + " " + str(a[n - 1]))
-print(str(Min_element(a)) + " " + str(Max_element(s)))
+print(str(Min_element(a)) + " " + str(Max_element(a)))
 print(Sum_list(a))
 print(square(a))# тут проблема
 print()
