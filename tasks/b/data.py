@@ -28,7 +28,8 @@ def First_occurrence(s, x):
         if s[i] == x:
             j = i
     if j < 0:
-        return N
+        j = None
+        return j
 def Sum_list(s):
     out = 0
     i = 0
