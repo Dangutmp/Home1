@@ -9,6 +9,20 @@
 убедитесь, что выводятся четыре различных значения.
 """
 
-# Место для вашего кода
+def factorial(x):
+    out = 1
+    while x > 0:
+        out *= x
+        x -= 1
+    return out
 
+
+
+int_var = 4
+float_var = 67**0.5
+str_var = "#just_a_hashtag"
+p1 = int_var * str_var
+p2 = int_var * float_var
+p3 = int_var**2
+p4 = float_var**2
 print(p1, p2, p3, p4, sep='\n')

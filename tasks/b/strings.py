@@ -16,7 +16,7 @@ def First_word(s):
     Len = len(s)
     i = 0
     out = ""
-    while s[i] != " ":
+    while s[i] != " " and i < Len:
         out += s[i]
     return out
 
@@ -52,4 +52,5 @@ print("Hello, " + s1 + "! Just wanted to say:" + s2)
 print(First_word(s1), First_word(s2))
 print(Word_count(s1))
 
+print("end")
 # Место для вашего кода
