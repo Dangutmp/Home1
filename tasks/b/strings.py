@@ -20,14 +20,14 @@ def First_word(s):
         out += s[i]
     return out
 
-def Word_count(s):
-    Len = len(s)
-    if Len == 1 and s[0] == " "
-        return 0
-    elif:
-        while i < Len:
+# def Word_count(s):
+#     Len = len(s)
+#     if Len == 1 and s[0] == " "
+#         return 0
+#     elif:
+#         while i < Len:
 
-
+#где то засел вечный цикл
 s1 = input()
 s2 = input()
 
