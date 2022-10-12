@@ -21,37 +21,18 @@ def Collarts(x):
         #print(x)
         n += 1
     return n
-def even_2(s):
-    i = 0
-    out = ""
-    Len = len(s)
-    while i < Len:
-        if i % 2 == 0:
-            out += s[i]
-            i += 2
-    return out
-def even_1(s):
-    i = 0
-    out = ""
-    Len = len(s)
-    while i < Len:
-        if i % 2 == 0:
-            out += s[i]
-        i += 1
-    return out
-
+def even(s):
+    return int(len(s) / 2)
 
 from test.common.context import get_integer, get_string
 
 x = get_integer()
 y = get_integer()
 s = get_string()
-
 print(x, y, s)
 # x = 12
 # y = 15
 print(abs((int(x) - int(y))) - 1)
 print(Collarts(x))
-print(even_2(s))
-
+print(even(s))
 # Место для вашего кода

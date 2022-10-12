@@ -61,7 +61,49 @@ if isinstance(((x + y) * (y + z) * (x + z))**3, float):
 print(int(z * 10**5) / 10**5)
 if isinstance(int(z * 10**5) / 10**5, float):
     FLOATS += 1
-print("FLOAT = " + str(FLOATS))
+#print("FLOAT = " + str(FLOATS))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

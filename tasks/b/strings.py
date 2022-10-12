@@ -18,6 +18,7 @@ def First_word(s):
     out = ""
     while s[i] != " " and i < Len:
         out += s[i]
+        i += 1
     return out
 
 def Word_count(s):
@@ -27,19 +28,14 @@ def Word_count(s):
     out = 0
     while i < Len:
         if s[i] == " ":
-            i += 1
             j = 1
-            print("if")
         else:
             if j == 1:
                 out += 1
                 j = 0
-                i += 1
-                print("else if")
-            else:
-                i += 1
-                print("else else")
-        print("nothjing")
+        i += 1
+    if s[0] != " ":
+        out += 1
     return out
 #где то засел вечный цикл
 s1 = input()
@@ -47,7 +43,7 @@ s2 = input()
 
 print(len(s1) * len(s2))
 print(s1, s2)
-print(s1 + "," + "" + s2)
+print(s1 + "," + "  " + s2)
 print("Hello, " + s1 + "! Just wanted to say:" + s2)
 print(First_word(s1), First_word(s2))
 print(Word_count(s1))

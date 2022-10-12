@@ -21,15 +21,14 @@ import copy
 
 
 def First_occurrence(s, x):
-    j = -1
-    i = 0
     Len = len(s)
-    while i < Len:
+    for i in range(0, Len):
         if s[i] == x:
-            j = i
-    if j < 0:
-        j = None
-        return j
+            break
+    if i == Len:
+        return None
+    else:
+        return i
 def Sum_list(s):
     out = 0
     i = 0
@@ -41,7 +40,7 @@ def Sum_list(s):
 
 def square(s):
     out = list()
-    i = 0
+    i = 1
     Len = len(s)
     while i <Len:
         out.append(s[i] * s[i])
@@ -50,26 +49,26 @@ def square(s):
 def mirror_list(s):
     out = list()
     Len = len(s)
-    for i in range(1, Len):
+    for i in range(1, Len + 1):
         out.append(s[Len - i])
     return out
 def even_elements(s):
     Len = len(s)
     out = list()
-    i = 0
+    i = 1
     while i < Len:
         out.append(s[i])
         i += 2
     return out
 
-def Max_element(s):
+def Min_element(s):
     Len = len(s)
     out = s[0]
     for i in range(1, Len):
         if out > s[i]:
             out = s[i]
     return out
-def Min_element(s):
+def Max_element(s):
     Len = len(s)
     out = s[0]
     for i in range(1, Len):
@@ -80,7 +79,6 @@ def Min_element(s):
 from test.common.context import get_integer
 
 n = get_integer()
-n = 5
 a = list()
 i = 0
 while i < n:
@@ -94,6 +92,6 @@ print(str(a[0]) + " " + str(a[int(n / 2)]) + " " + str(a[n - 1]))
 print(str(Min_element(a)) + " " + str(Max_element(a)))
 print(Sum_list(a))
 print(square(a))# тут проблема
-print()
+print(First_occurrence(a, Min_element(a)))
 print(mirror_list(a))
 print(even_elements(a))

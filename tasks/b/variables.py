@@ -8,13 +8,12 @@
 Запустите файл (Right Click -> Run или Ctrl + Shift + F10),
 убедитесь, что выводятся четыре различных значения.
 """
-
-def factorial(x):
-    out = 1
-    while x > 0:
-        out *= x
-        x -= 1
-    return out
+# def factorial(x):
+#     out = 1
+#     while x > 0:
+#         out *= x
+#         x -= 1
+#     return out
 
 
 
